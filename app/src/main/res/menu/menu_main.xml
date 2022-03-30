@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    tools:context="com.slment.jsefuel.UI.MainActivity">
+
+    <item
+        android:id="@+id/action_add_fuel"
+        android:orderInCategory="100"
+        android:title="Add Fuel"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_add_oil"
+        android:orderInCategory="200"
+        android:title="Add Oil Change"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_view_fuel"
+        android:orderInCategory="300"
+        android:title="View Fuel History"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_view_oil"
+        android:orderInCategory="400"
+        android:title="View Oil Change History"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_update_db"
+        android:orderInCategory="500"
+        android:title="Update Database"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="600"
+        android:title="Exit App"
+        app:showAsAction="never"/>
+</menu>

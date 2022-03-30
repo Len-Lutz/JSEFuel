@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/AppTheme"
+    tools:context="com.slment.jsefuel.UI.FuelActivity">
+
+<!--    <item-->
+<!--        android:id="@+id/action_from_fuel_add_fuel"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="Add Fillup"-->
+<!--        app:showAsAction="never" />-->
+
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="200"
+        android:title="@string/previous_screen"
+        app:showAsAction="never" />
+</menu>

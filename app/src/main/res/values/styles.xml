@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="lists">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:background">@android:color/holo_blue_light</item>
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="myCalendar" parent="Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">.5</item>
+        <item name="android:padding">0dp</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">#3F51B5</item>
+        <item name="colorControlActivated">#2196F3</item>
+        <item name="colorControlHighlight">#F44336</item>
+    </style>
+
+    <style name="myTimePicker" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:timePickerMode">spinner</item>
+        <item name="android:padding">0dp</item>
+        <item name="colorAccent">#3F51B5</item>
+        <item name="colorControlActivated">#2196F3</item>
+        <item name="colorControlHighlight">#F44336</item>
+    </style>
+
+    <style name="abirStyle" parent="@android:style/Theme.Holo.Light.Dialog.NoActionBar">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+    </style>
+</resources>

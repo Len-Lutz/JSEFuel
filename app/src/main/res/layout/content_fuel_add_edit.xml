@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvFuelCostPrompt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TextView
+        android:id="@+id/tvVehicleIdBackground2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:background="#000000"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVehicleNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="#000000"
+        android:text="Vehicle Number:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvVehicleIdBackground2"
+        app:layout_constraintEnd_toEndOf="@+id/tvVehicleIdBackground2"
+        app:layout_constraintTop_toTopOf="@+id/tvVehicleIdBackground2" />
+
+    <TextView
+        android:id="@+id/tvProviderPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Purchased From:"
+        app:layout_constraintStart_toStartOf="@+id/etFuelFillGallons"
+        app:layout_constraintTop_toBottomOf="@+id/etFuelFillGallons" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFuelFillProviderList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorListBackground"
+        app:layout_constraintBottom_toTopOf="@+id/btnFuelFillCancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvProviderPrompt" />
+
+    <TextView
+        android:id="@+id/tvFuelFillDatePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Fill Date:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVehicleIdBackground2" />
+
+    <EditText
+        android:id="@+id/etFuelFillDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        app:layout_constraintStart_toStartOf="@+id/tvFuelFillDatePrompt"
+        app:layout_constraintTop_toBottomOf="@+id/tvFuelFillDatePrompt" />
+
+    <TextView
+        android:id="@+id/tvFuelFillTimePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fill Time:"
+        app:layout_constraintStart_toStartOf="@+id/etFuelFillTime"
+        app:layout_constraintTop_toTopOf="@+id/tvFuelFillDatePrompt" />
+
+    <EditText
+        android:id="@+id/etFuelFillTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="5"
+        android:clickable="true"
+        android:editable="false"
+        android:focusable="false"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etFuelFillDate" />
+
+    <TextView
+        android:id="@+id/tvFuelFillOdometerPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Odometer Miles:"
+        app:layout_constraintStart_toStartOf="@+id/etFuelFillDate"
+        app:layout_constraintTop_toBottomOf="@+id/etFuelFillDate" />
+
+    <TextView
+        android:id="@+id/tvDistancePrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miles Since Last Fill:"
+        app:layout_constraintEnd_toEndOf="@id/etFuelFillMiles"
+        app:layout_constraintTop_toTopOf="@+id/tvFuelFillOdometerPrompt" />
+
+    <EditText
+        android:id="@+id/etFuelFillOdometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvFuelFillOdometerPrompt"
+        app:layout_constraintTop_toBottomOf="@+id/tvFuelFillOdometerPrompt" />
+
+    <EditText
+        android:id="@+id/etFuelFillMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistancePrompt" />
+
+    <TextView
+        android:id="@+id/tvOrPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="--OR--"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/etFuelFillMiles"
+        app:layout_constraintEnd_toStartOf="@+id/etFuelFillMiles"
+        app:layout_constraintStart_toEndOf="@+id/etFuelFillOdometer"
+        app:layout_constraintTop_toBottomOf="@+id/tvDistancePrompt" />
+
+    <TextView
+        android:id="@+id/tvFuelGallonsPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gallons:"
+        app:layout_constraintStart_toStartOf="@+id/etFuelFillOdometer"
+        app:layout_constraintTop_toBottomOf="@+id/etFuelFillOdometer" />
+
+    <TextView
+        android:id="@+id/tvFuelFillCostPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cost:"
+        app:layout_constraintStart_toStartOf="@+id/etFuelFillCost"
+        app:layout_constraintTop_toTopOf="@+id/tvFuelGallonsPrompt" />
+
+    <EditText
+        android:id="@+id/etFuelFillGallons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tvFuelGallonsPrompt"
+        app:layout_constraintTop_toBottomOf="@+id/tvFuelGallonsPrompt" />
+
+    <EditText
+        android:id="@+id/etFuelFillCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:ems="5"
+        android:inputType="numberDecimal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFuelFillCostPrompt" />
+
+    <TextView
+        android:id="@+id/tvFuelCostDollarSign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/etFuelFillCost"
+        app:layout_constraintEnd_toStartOf="@+id/etFuelFillCost"
+        app:layout_constraintTop_toTopOf="@+id/etFuelFillCost" />
+
+    <Button
+        android:id="@+id/btnFuelFillCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cancel"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/rvFuelFillProviderList" />
+
+    <Button
+        android:id="@+id/btnFuelFillSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Save"
+        android:textColor="@color/red"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rvFuelFillProviderList" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

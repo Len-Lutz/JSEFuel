@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">JSE Fuel</string>
+    <string name="title_activity_oil">Oil Changes</string>
+    <string name="previous_screen">Back to Previous Screen</string>
+<!--    <string name="btnOK">OK</string>-->
+<!--    <string name="btnMessage">Message To Display</string>-->
+</resources>
