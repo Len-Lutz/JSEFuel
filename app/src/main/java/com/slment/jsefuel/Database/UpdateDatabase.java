@@ -52,9 +52,9 @@ public class UpdateDatabase extends AppCompatActivity {
         this.closeWhenDone = closeWhenDone;
         this.workCell = workCell;
 
-         strConnection = "jdbc:mysql://LensCameraLens.com:3306/lenscam_jsefuel_db";
-         strUser = "lenscam_wgu";
-         strPassword = "CRgbG2qA4TV#";
+         strConnection = "jdbc:mysql://192.168.0.199:3306/jsefuel_db";
+         strUser = "Len";
+         strPassword = "D7lsi2357";
 
 
         progDlg = new ProgressDialog(context);
